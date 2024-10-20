@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Piazolla", serif;
+}
+
+:root {
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+    --navbar-bg: grey; /* Added variable for navbar background */
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    background-color: var(--main-bg);
+    color: #fff;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.main_menu {
+    background-color: var(--navbar-bg); /* Changed to use variable */
+}
+
+.navbar {
+    padding: 2rem 0;
+    background-color: var(--navbar-bg) !important; /* Ensuring background color is applied */
+}
+
+.navbar-toggler {
+    background-color: grey;
+}
+
+.navbar a.nav-link {
+    color: #fff !important;
+    font-size: 1.8rem;
+    background-color: var(--navbar-bg); /* Set background color to grey */
+    padding: 0.5rem 1rem; /* Add some padding to the links */
+    margin: 0 0.5rem; /* Add some margin to separate the links */
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 2rem;
+}
+
+.main_header_left {
+    padding: 2rem 0;
+}
+
+.main_header_left p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main_header_left h1 {
+    font-size: 2.6rem; /* Adjusted font size to fit in one line */
+    margin-bottom: 2rem;
+}
+
+.main_header_left h1 span {
+    color: var(--main-color);
+}
+
+.main_header_left button {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+    color: #fff;
+    background-color: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+
+.main_header_right {
+    padding: 2rem 0;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.fa-snowflake {
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: var(--main-color);
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.main_header_left
+{
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main_header_right
+{
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--main-bg);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
